@@ -14,45 +14,25 @@
         tools:context=".BmiActivity">
 
         <TextView
+            style="@style/TextViewForm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginBottom="40dp"
             android:text="@string/bmi_desc" />
 
         <EditText
             android:id="@+id/edit_bmi_weight"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginBottom="40dp"
-            android:hint="@string/weight"
-            android:inputType="number"
-            android:maxLength="3" />
+            style="@style/EditTextForm"
+            android:hint="@string/weight" />
 
         <EditText
             android:id="@+id/edit_bmi_height"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginBottom="40dp"
-            android:hint="@string/height"
-            android:inputType="number"
-            android:maxLength="3" />
+            style="@style/EditTextForm"
+            android:hint="@string/height" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_bmi_send"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_marginBottom="40dp"
-            android:background="@color/colorAccent"
-            android:text="@string/calc"
-            android:textColor="@android:color/white"
-            android:textStyle="normal" />
-
+            style="@style/ButtonForm"
+            android:text="@string/calc" />
 
     </LinearLayout>
 </ScrollView>
